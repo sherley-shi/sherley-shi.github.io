@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Linux学习]]></title>
     <url>%2F2018%2F03%2F07%2FLinux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[目录路径使用cd切换目录;.表示当前目录;..表示上一级目录使用cd ~进入当前用户的home目录]]></content>
+    <content type="text"><![CDATA[目录结构图片转自实验楼 目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图 创建文件及文件夹 新建空白文件： touch 文件名 新建目录： mkdir 目录名（使用-p可以创建不存在的父目录） 创建多个文件： touch file{1..5}.txt]]></content>
       <tags>
         <tag>Linux</tag>
       </tags>
