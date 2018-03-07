@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linux学习]]></title>
+    <url>%2F2018%2F03%2F07%2FLinux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[目录路径使用cd切换目录;.表示当前目录;..表示上一级目录使用cd ~进入当前用户的home目录]]></content>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Bazinga]]></title>
     <url>%2F2018%2F03%2F06%2FnewFile%2F</url>
     <content type="text"><![CDATA[Hey man.]]></content>
