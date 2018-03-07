@@ -90,20 +90,24 @@
 
 
 
-<meta name="description" content="目录结构图片转自实验楼  目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图  创建文件及文件夹  新建空白文件： touch 文件名  新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）  创建多个文件： touch file{1..5}.txt">
+<meta name="description" content="目录结构图片转自实验楼  目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图  创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp 文件">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux学习">
 <meta property="og:url" content="http://yoursite.com/2018/03/07/Linux基本指令/index.html">
 <meta property="og:site_name" content="Bazinga">
-<meta property="og:description" content="目录结构图片转自实验楼  目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图  创建文件及文件夹  新建空白文件： touch 文件名  新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）  创建多个文件： touch file{1..5}.txt">
+<meta property="og:description" content="目录结构图片转自实验楼  目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图  创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp 文件">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/FHS标准.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/pwd.png">
-<meta property="og:updated_time" content="2018-03-07T08:59:47.508Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/delete.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/cat.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/hanghao.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/tail.png">
+<meta property="og:updated_time" content="2018-03-07T09:29:47.192Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux学习">
-<meta name="twitter:description" content="目录结构图片转自实验楼  目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图  创建文件及文件夹  新建空白文件： touch 文件名  新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）  创建多个文件： touch file{1..5}.txt">
+<meta name="twitter:description" content="目录结构图片转自实验楼  目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图  创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp 文件">
 <meta name="twitter:image" content="http://yoursite.com/2018/03/07/Linux基本指令/FHS标准.png">
 
 
@@ -373,14 +377,22 @@
 
       
         <ul>
-<li><p>目录结构<br><img src="/2018/03/07/Linux基本指令/FHS标准.png" alt="目录结构"><br>图片转自实验楼</p>
+<li><p>目录结构<br>图片转自实验楼<br><img src="/2018/03/07/Linux基本指令/FHS标准.png" alt="目录结构"></p>
 </li>
 <li><p>目录路径<br>使用cd切换目录;<br>.表示当前目录;<br>..表示上一级目录;<br>使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入<br>使用pwd来获取当前路径，如下图<br><img src="/2018/03/07/Linux基本指令/pwd.png" alt="pwd"></p>
 </li>
-<li><p>创建文件及文件夹<br>  新建空白文件： touch 文件名<br>  新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）<br>  创建多个文件： touch file{1..5}.txt
-  　</p>
+<li><p>创建文件及目录<br>新建空白文件： touch 文件名<br>新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）<br>创建多个文件： touch file{1..5}.txt<br>复制文件： cp 文件名 目的目录<br>复制整个目录： cp -r(或者－R)　目录名　目的目录名</p>
+</li>
+<li><p>删除文件及目录<br>使用 rm 删除文件<br>使用rm -f 强制删除文件<br>无法使用rm删除目录，应使用rm -r删除目录<br>效果图如下所示<br><img src="/2018/03/07/Linux基本指令/delete.png" alt="delete"></p>
+</li>
+<li><p>移动文件与文件重命名<br>移动文件：　mv 源目录文件　目的目录<br>重命名：　mv 旧文件名　新文件名<br>批量重命名： rename ‘s/.txt/.c’ .txt 表示将.txt后缀改为.c</p>
+</li>
+<li><p>查看文件<br>使用cat查看文件，效果如下图<br><img src="/2018/03/07/Linux基本指令/cat.png" alt="cat"></p>
 </li>
 </ul>
+<p>加入 -n 显示行号<br><img src="/2018/03/07/Linux基本指令/hanghao.png" alt="hanghao"></p>
+<p>使用more显示一屏文件,键入ENTER显示下一行，键入space显示下一屏</p>
+<p>可以使用tail和head显示后面几行和前面几行的文件，添加 -n 2表示显示行数，效果图如下所示<br><img src="/2018/03/07/Linux基本指令/tail.png" alt="tail"></p>
 
       
     </div>

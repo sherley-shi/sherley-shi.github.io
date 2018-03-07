@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Linux学习]]></title>
     <url>%2F2018%2F03%2F07%2FLinux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[目录结构图片转自实验楼 目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图 创建文件及文件夹 新建空白文件： touch 文件名 新建目录： mkdir 目录名（使用-p可以创建不存在的父目录） 创建多个文件： touch file{1..5}.txt]]></content>
+    <content type="text"><![CDATA[目录结构图片转自实验楼 目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图 创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp 文件名 目的目录复制整个目录： cp -r(或者－R) 目录名 目的目录名 删除文件及目录使用 rm 删除文件使用rm -f 强制删除文件无法使用rm删除目录，应使用rm -r删除目录效果图如下所示 移动文件与文件重命名移动文件： mv 源目录文件 目的目录重命名： mv 旧文件名 新文件名批量重命名： rename ‘s/.txt/.c’ .txt 表示将.txt后缀改为.c 查看文件使用cat查看文件，效果如下图 加入 -n 显示行号 使用more显示一屏文件,键入ENTER显示下一行，键入space显示下一屏 可以使用tail和head显示后面几行和前面几行的文件，添加 -n 2表示显示行数，效果图如下所示]]></content>
       <tags>
         <tag>Linux</tag>
       </tags>
