@@ -90,13 +90,13 @@
 
 
 
-<meta name="description" content="h1 目录结构图片转自实验楼  目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图  创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp">
+<meta name="description" content="目录结构图片转自实验楼 目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图 创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp 文件名 目">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux学习">
 <meta property="og:url" content="http://yoursite.com/2018/03/07/Linux基本指令/index.html">
 <meta property="og:site_name" content="Bazinga">
-<meta property="og:description" content="h1 目录结构图片转自实验楼  目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图  创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp">
+<meta property="og:description" content="目录结构图片转自实验楼 目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图 创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp 文件名 目">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/FHS标准.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/pwd.png">
@@ -104,10 +104,10 @@
 <meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/cat.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/hanghao.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/tail.png">
-<meta property="og:updated_time" content="2018-03-07T09:36:13.776Z">
+<meta property="og:updated_time" content="2018-03-07T09:37:44.620Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux学习">
-<meta name="twitter:description" content="h1 目录结构图片转自实验楼  目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图  创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp">
+<meta name="twitter:description" content="目录结构图片转自实验楼 目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图 创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp 文件名 目">
 <meta name="twitter:image" content="http://yoursite.com/2018/03/07/Linux基本指令/FHS标准.png">
 
 
@@ -398,20 +398,12 @@
       
 
       
-        <h1 id="h1"><a href="#h1" class="headerlink" title="h1"></a>h1</h1><ul>
-<li><p>目录结构<br>图片转自实验楼<br><img src="/2018/03/07/Linux基本指令/FHS标准.png" alt="目录结构"></p>
-</li>
-<li><p>目录路径<br>使用cd切换目录;<br>.表示当前目录;<br>..表示上一级目录;<br>使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入<br>使用pwd来获取当前路径，如下图<br><img src="/2018/03/07/Linux基本指令/pwd.png" alt="pwd"></p>
-</li>
-<li><p>创建文件及目录<br>新建空白文件： touch 文件名<br>新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）<br>创建多个文件： touch file{1..5}.txt<br>复制文件： cp 文件名 目的目录<br>复制整个目录： cp -r(或者－R)　目录名　目的目录名</p>
-</li>
-<li><p>删除文件及目录<br>使用 rm 删除文件<br>使用rm -f 强制删除文件<br>无法使用rm删除目录，应使用rm -r删除目录<br>效果图如下所示<br><img src="/2018/03/07/Linux基本指令/delete.png" alt="delete"></p>
-</li>
-<li><p>移动文件与文件重命名<br>移动文件：　mv 源目录文件　目的目录<br>重命名：　mv 旧文件名　新文件名<br>批量重命名： rename ‘s/.txt/.c’*.txt 表示将.txt后缀改为.c</p>
-</li>
-<li><p>查看文件<br>使用cat查看文件，效果如下图<br><img src="/2018/03/07/Linux基本指令/cat.png" alt="cat"></p>
-</li>
-</ul>
+        <h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><p>图片转自实验楼<br><img src="/2018/03/07/Linux基本指令/FHS标准.png" alt="目录结构"></p>
+<h1 id="目录路径"><a href="#目录路径" class="headerlink" title="目录路径"></a>目录路径</h1><p>使用cd切换目录;<br>.表示当前目录;<br>..表示上一级目录;<br>使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入<br>使用pwd来获取当前路径，如下图<br><img src="/2018/03/07/Linux基本指令/pwd.png" alt="pwd"></p>
+<h1 id="创建文件及目录"><a href="#创建文件及目录" class="headerlink" title="创建文件及目录"></a>创建文件及目录</h1><p>新建空白文件： touch 文件名<br>新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）<br>创建多个文件： touch file{1..5}.txt<br>复制文件： cp 文件名 目的目录<br>复制整个目录： cp -r(或者－R)　目录名　目的目录名</p>
+<h1 id="删除文件及目录"><a href="#删除文件及目录" class="headerlink" title="删除文件及目录"></a>删除文件及目录</h1><p>使用 rm 删除文件<br>使用rm -f 强制删除文件<br>无法使用rm删除目录，应使用rm -r删除目录<br>效果图如下所示<br><img src="/2018/03/07/Linux基本指令/delete.png" alt="delete"></p>
+<h1 id="移动文件与文件重命名"><a href="#移动文件与文件重命名" class="headerlink" title="移动文件与文件重命名"></a>移动文件与文件重命名</h1><p>移动文件：　mv 源目录文件　目的目录<br>重命名：　mv 旧文件名　新文件名<br>批量重命名： rename ‘s/.txt/.c’*.txt 表示将.txt后缀改为.c</p>
+<h1 id="查看文件"><a href="#查看文件" class="headerlink" title="查看文件"></a>查看文件</h1><p>使用cat查看文件，效果如下图<br><img src="/2018/03/07/Linux基本指令/cat.png" alt="cat"></p>
 <p>加入 -n 显示行号<br><img src="/2018/03/07/Linux基本指令/hanghao.png" alt="hanghao"></p>
 <p>使用more显示一屏文件,键入ENTER显示下一行，键入space显示下一屏</p>
 <p>可以使用tail和head显示后面几行和前面几行的文件，添加 -n 2表示显示行数，效果图如下所示<br><img src="/2018/03/07/Linux基本指令/tail.png" alt="tail"></p>
@@ -585,7 +577,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#h1"><span class="nav-number">1.</span> <span class="nav-text">h1</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录结构"><span class="nav-number">1.</span> <span class="nav-text">目录结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#目录路径"><span class="nav-number">2.</span> <span class="nav-text">目录路径</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建文件及目录"><span class="nav-number">3.</span> <span class="nav-text">创建文件及目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除文件及目录"><span class="nav-number">4.</span> <span class="nav-text">删除文件及目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#移动文件与文件重命名"><span class="nav-number">5.</span> <span class="nav-text">移动文件与文件重命名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看文件"><span class="nav-number">6.</span> <span class="nav-text">查看文件</span></a></li></ol></div>
             
 
           </div>

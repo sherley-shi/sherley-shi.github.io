@@ -1,30 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[Linux学习]]></title>
-    <url>%2F2018%2F03%2F07%2FLinux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[h1 目录结构图片转自实验楼 目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图 创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp 文件名 目的目录复制整个目录： cp -r(或者－R) 目录名 目的目录名 删除文件及目录使用 rm 删除文件使用rm -f 强制删除文件无法使用rm删除目录，应使用rm -r删除目录效果图如下所示 移动文件与文件重命名移动文件： mv 源目录文件 目的目录重命名： mv 旧文件名 新文件名批量重命名： rename ‘s/.txt/.c’*.txt 表示将.txt后缀改为.c 查看文件使用cat查看文件，效果如下图 加入 -n 显示行号 使用more显示一屏文件,键入ENTER显示下一行，键入space显示下一屏 可以使用tail和head显示后面几行和前面几行的文件，添加 -n 2表示显示行数，效果图如下所示]]></content>
+<search> 
+  
+    
+    <entry>
+      <title>Linux学习</title>
+      <link href="/2018/03/07/Linux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/"/>
+      <content type="html"><![CDATA[<h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><p>图片转自实验楼<br><img src="/2018/03/07/Linux基本指令/FHS标准.png" alt="目录结构"></p><h1 id="目录路径"><a href="#目录路径" class="headerlink" title="目录路径"></a>目录路径</h1><p>使用cd切换目录;<br>.表示当前目录;<br>..表示上一级目录;<br>使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入<br>使用pwd来获取当前路径，如下图<br><img src="/2018/03/07/Linux基本指令/pwd.png" alt="pwd"></p><h1 id="创建文件及目录"><a href="#创建文件及目录" class="headerlink" title="创建文件及目录"></a>创建文件及目录</h1><p>新建空白文件： touch 文件名<br>新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）<br>创建多个文件： touch file{1..5}.txt<br>复制文件： cp 文件名 目的目录<br>复制整个目录： cp -r(或者－R)　目录名　目的目录名</p><h1 id="删除文件及目录"><a href="#删除文件及目录" class="headerlink" title="删除文件及目录"></a>删除文件及目录</h1><p>使用 rm 删除文件<br>使用rm -f 强制删除文件<br>无法使用rm删除目录，应使用rm -r删除目录<br>效果图如下所示<br><img src="/2018/03/07/Linux基本指令/delete.png" alt="delete"></p><h1 id="移动文件与文件重命名"><a href="#移动文件与文件重命名" class="headerlink" title="移动文件与文件重命名"></a>移动文件与文件重命名</h1><p>移动文件：　mv 源目录文件　目的目录<br>重命名：　mv 旧文件名　新文件名<br>批量重命名： rename ‘s/.txt/.c’*.txt 表示将.txt后缀改为.c</p><h1 id="查看文件"><a href="#查看文件" class="headerlink" title="查看文件"></a>查看文件</h1><p>使用cat查看文件，效果如下图<br><img src="/2018/03/07/Linux基本指令/cat.png" alt="cat"></p><p>加入 -n 显示行号<br><img src="/2018/03/07/Linux基本指令/hanghao.png" alt="hanghao"></p><p>使用more显示一屏文件,键入ENTER显示下一行，键入space显示下一屏</p><p>可以使用tail和head显示后面几行和前面几行的文件，添加 -n 2表示显示行数，效果图如下所示<br><img src="/2018/03/07/Linux基本指令/tail.png" alt="tail"></p>]]></content>
+      
       <categories>
-        <category>Linux</category>
+          
+          <category> Linux </category>
+          
       </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Bazinga]]></title>
-    <url>%2F2018%2F03%2F06%2FnewFile%2F</url>
-    <content type="text"><![CDATA[Hey man.]]></content>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Bazinga</title>
+      <link href="/2018/03/06/newFile/"/>
+      <content type="html"><![CDATA[<p>Hey man.</p><p><img src="/2018/03/06/newFile/hey.jpg" alt="&quot;ha&quot;"></p>]]></content>
+      
       <categories>
-        <category>test</category>
+          
+          <category> test </category>
+          
       </categories>
-      <tags>
-        <tag>one</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F02%2F27%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> one </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2018/02/27/hello-world/"/>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+    </entry>
+    
+  
+  
 </search>
