@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Linux学习（二）]]></title>
     <url>%2F2018%2F03%2F09%2FLinux%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[Bash简单入门在后面有用到Bash和shell，所以先看一点相关的东西 Shell:命令解释器，是一种解释性语言，也成为脚本语言 Shell编程：可以使用vim,gedit来创建shell程序 gedit hello.sh //创建shell程序#!/bin/bash //#!用来说明文件类型，表示为需要由bin目录下的bash程序来解释echo “hello world”sh hello.sh //当使用 ./ 来进行执行时需要对文件的可执行权限进行修改 效果如下也可以使用bash/./source来执行程序 环境变量与文件查找a ##变量： 变量（shell变量）：计算机中用于计算一个值的符号，可以用于不同的运算处理当中．一个范围内只能由一个同名变量． declare temptemp=SJQecho $temp 以上代码为声明变量和显示变量值，也可以不使用 declare 直接对变量进行赋值，效果如下 环境变量：作用域比自定义变量的大（如shell的环境变量作用于自身和它的子进程） 变量分为三种类型：1.当前shell进程私有的用户自定义变量；2.shell本身内建的变量；3.从自定义变量导出的环境变量 ##有关变量的一些命令 set: 显示当前shell的所有变量 env: 显示与当前用户相关的环境变量，也可以让命令在指定环境中运行 export: 显示从shell中导出成环境变量的变量，也能通过它将自定义变量导出为环境变量（环境变量通常为大写）]]></content>
+    <content type="text"><![CDATA[Bash简单入门在后面有用到Bash和shell，所以先看一点相关的东西 Shell:命令解释器，是一种解释性语言，也成为脚本语言 Shell编程：可以使用vim,gedit来创建shell程序 gedit hello.sh //创建shell程序#!/bin/bash //#!用来说明文件类型，表示为需要由bin目录下的bash程序来解释echo “hello world”sh hello.sh //当使用 ./ 来进行执行时需要对文件的可执行权限进行修改 效果如下也可以使用bash/./source来执行程序 环境变量与文件查找变量： 变量（shell变量）：计算机中用于计算一个值的符号，可以用于不同的运算处理当中．一个范围内只能由一个同名变量． declare temptemp=SJQecho $temp 以上代码为声明变量和显示变量值，也可以不使用 declare 直接对变量进行赋值，效果如下 环境变量：作用域比自定义变量的大（如shell的环境变量作用于自身和它的子进程） 变量分为三种类型：1.当前shell进程私有的用户自定义变量；2.shell本身内建的变量；3.从自定义变量导出的环境变量 ##有关变量的一些命令 set: 显示当前shell的所有变量 env: 显示与当前用户相关的环境变量，也可以让命令在指定环境中运行 export: 显示从shell中导出成环境变量的变量，也能通过它将自定义变量导出为环境变量（环境变量通常为大写）]]></content>
       <categories>
         <category>Linux</category>
       </categories>
