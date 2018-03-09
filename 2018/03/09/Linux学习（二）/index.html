@@ -101,7 +101,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/03/09/Linux学习（二）/shell编程.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/09/Linux学习（二）/declare.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/09/Linux学习（二）/export_环境变量.png">
-<meta property="og:updated_time" content="2018-03-09T13:17:40.639Z">
+<meta property="og:updated_time" content="2018-03-09T13:19:52.939Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux学习（二）">
 <meta name="twitter:description" content="Bash简单入门在后面有用到Bash和shell，所以先看一点相关的东西  Shell:命令解释器，是一种解释性语言，也成为脚本语言 Shell编程：可以使用vim,gedit来创建shell程序 gedit hello.sh //创建shell程序#!/bin/bash //#!用来说明文件类型，表示为需要由bin目录下的bash程序来解释echo “hello world”sh hello.s">
@@ -439,12 +439,9 @@
 <h2 id="文件查找"><a href="#文件查找" class="headerlink" title="文件查找"></a>文件查找</h2><ol>
 <li>whereis: 快速</li>
 <li>locate: 快　全<blockquote>
-<p>locate /etc/sh：查找/etc下所有sh开头的文件<br>locate /usr/share/*.jpg : 查找所有jpg文件 </p>
+<p>locate /etc/sh：查找/etc下所有sh开头的文件<br>locate /usr/share/*.jpg : 查找所有jpg文件<br>-c统计数目　－i忽略大小写</p>
 </blockquote>
 </li>
-</ol>
-<p>-c统计数目　－i忽略大小写</p>
-<ol>
 <li>which：小而快速，只从PATH环境变量指向的路径去搜索指令</li>
 <li>find: 精而细．　find /[path][option][action]</li>
 </ol>
