@@ -101,7 +101,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/03/09/Linux学习（二）/shell编程.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/09/Linux学习（二）/declare.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/09/Linux学习（二）/export_环境变量.png">
-<meta property="og:updated_time" content="2018-03-13T12:43:11.874Z">
+<meta property="og:updated_time" content="2018-03-13T12:45:15.002Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux学习（二）">
 <meta name="twitter:description" content="Bash简单入门在后面有用到Bash和shell，所以先看一点相关的东西  Shell:命令解释器，是一种解释性语言，也成为脚本语言 Shell编程：可以使用vim,gedit来创建shell程序 gedit hello.sh //创建shell程序#!/bin/bash //#!用来说明文件类型，表示为需要由bin目录下的bash程序来解释echo “hello world”sh hello.s">
@@ -422,7 +422,7 @@
 <p>PATH=$PATH:home/…(绝对路径)<br>使用这种方法，在退出终端后失效<br>PATH以：作为分隔符</p>
 </blockquote>
 </li>
-<li>修改和删除已有变量：<br>输入 &amp;#124 作用<br>—–&amp;#124—–<br>${变量名#匹配字符            |#124 从前到后删除最短数据<br>${变量名##匹配字符}          |#124 从前到后删除最长数据<br>${变量名%匹配字符}           |#124 从后到前删除最短数据<br>${变量名%%匹配字符}          |#124 从后到前删除最长数据<br>${变量名/旧字符串/新字符串}  |#124 将第一个旧字符串换为新字符串<br>${变量名//旧字符串/新字符串} |#124 将全部旧字符串换为新字符串<blockquote>
+<li>修改和删除已有变量：<br>输入 &#124; 作用<br>—–&#124;—–<br>${变量名#匹配字符            &#124; 从前到后删除最短数据<br>${变量名##匹配字符}          &#124; 从前到后删除最长数据<br>${变量名%匹配字符}           &#124; 从后到前删除最短数据<br>${变量名%%匹配字符}          &#124; 从后到前删除最长数据<br>${变量名/旧字符串/新字符串}  &#124; 将第一个旧字符串换为新字符串<br>${变量名//旧字符串/新字符串} &#124; 将全部旧字符串换为新字符串<blockquote>
 <p>unset 变量名　删除变量</p>
 </blockquote>
 </li>
