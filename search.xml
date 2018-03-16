@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Linux学习（三）]]></title>
     <url>%2F2018%2F03%2F16%2FLinux%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[文件打包与压缩zip打包 zip -r -q -o test.zip /home/…将/home/…打包成一个文件-r: 递归打包，包含子目录的全部内容-q:不向屏幕输出信息-o:输出文件zip -r -9 -o a.zip /home/… -x ~/*.zip1.０－９代表级别，９是压缩为最小包 耗时最长2.路径只能使用绝对路径表示]]></content>
+    <content type="text"><![CDATA[文件打包与压缩zip打包 zip -r -q -o test.zip /home/… 将/home/…打包成一个文件-r: 递归打包，包含子目录的全部内容-q:不向屏幕输出信息-o:输出文件 zip -r -9 -o a.zip /home/… -x ~/*.zip 1.０－９代表级别，９是压缩为最小包 耗时最长2.路径只能使用绝对路径表示]]></content>
       <categories>
         <category>Linux</category>
       </categories>
