@@ -90,18 +90,18 @@
 
 
 
-<meta name="description" content="文件打包与压缩zip打包 zip -r -q -o test.zip /home/…  将/home/…打包成一个文件-r: 递归打包，包含子目录的全部内容-q:不向屏幕输出信息-o:输出文件  zip -r -9 -o a.zip /home/… -x ~/*.zip  1.０－９代表级别，９是压缩为最小包　耗时最长2.路径只能使用绝对路径表示">
+<meta name="description" content="文件打包与压缩zip打包1zip -r -q -o test.zip /home/...　//将/home/...打包成一个文件 -r: 递归打包，包含子目录的全部内容-q:不向屏幕输出信息-o:输出文件1zip -r -9 -o a.zip /home/... -x ~/*.zip 1.０－９代表级别，９是压缩为最小包　耗时最长2.路径只能使用绝对路径表示3.-x表示排除.zip文件1du -h">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux学习（三）">
 <meta property="og:url" content="http://yoursite.com/2018/03/16/Linux学习（三）/index.html">
 <meta property="og:site_name" content="Bazinga">
-<meta property="og:description" content="文件打包与压缩zip打包 zip -r -q -o test.zip /home/…  将/home/…打包成一个文件-r: 递归打包，包含子目录的全部内容-q:不向屏幕输出信息-o:输出文件  zip -r -9 -o a.zip /home/… -x ~/*.zip  1.０－９代表级别，９是压缩为最小包　耗时最长2.路径只能使用绝对路径表示">
+<meta property="og:description" content="文件打包与压缩zip打包1zip -r -q -o test.zip /home/...　//将/home/...打包成一个文件 -r: 递归打包，包含子目录的全部内容-q:不向屏幕输出信息-o:输出文件1zip -r -9 -o a.zip /home/... -x ~/*.zip 1.０－９代表级别，９是压缩为最小包　耗时最长2.路径只能使用绝对路径表示3.-x表示排除.zip文件1du -h">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-16T15:39:30.592Z">
+<meta property="og:updated_time" content="2018-03-21T08:25:32.964Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux学习（三）">
-<meta name="twitter:description" content="文件打包与压缩zip打包 zip -r -q -o test.zip /home/…  将/home/…打包成一个文件-r: 递归打包，包含子目录的全部内容-q:不向屏幕输出信息-o:输出文件  zip -r -9 -o a.zip /home/… -x ~/*.zip  1.０－９代表级别，９是压缩为最小包　耗时最长2.路径只能使用绝对路径表示">
+<meta name="twitter:description" content="文件打包与压缩zip打包1zip -r -q -o test.zip /home/...　//将/home/...打包成一个文件 -r: 递归打包，包含子目录的全部内容-q:不向屏幕输出信息-o:输出文件1zip -r -9 -o a.zip /home/... -x ~/*.zip 1.０－９代表级别，９是压缩为最小包　耗时最长2.路径只能使用绝对路径表示3.-x表示排除.zip文件1du -h">
 
 
 
@@ -391,14 +391,10 @@
       
 
       
-        <h1 id="文件打包与压缩"><a href="#文件打包与压缩" class="headerlink" title="文件打包与压缩"></a>文件打包与压缩</h1><h2 id="zip打包"><a href="#zip打包" class="headerlink" title="zip打包"></a>zip打包</h2><blockquote>
-<p>zip -r -q -o test.zip /home/…</p>
-</blockquote>
-<p>将/home/…打包成一个文件<br>-r: 递归打包，包含子目录的全部内容<br>-q:不向屏幕输出信息<br>-o:输出文件</p>
-<blockquote>
-<p>zip -r -9 -o a.zip /home/… -x ~/*.zip</p>
-</blockquote>
-<p>1.０－９代表级别，９是压缩为最小包　耗时最长<br>2.路径只能使用绝对路径表示</p>
+        <h1 id="文件打包与压缩"><a href="#文件打包与压缩" class="headerlink" title="文件打包与压缩"></a>文件打包与压缩</h1><h2 id="zip打包"><a href="#zip打包" class="headerlink" title="zip打包"></a>zip打包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -r -q -o test.zip /home/...　//将/home/...打包成一个文件</span><br></pre></td></tr></table></figure>
+<p>-r: 递归打包，包含子目录的全部内容<br>-q:不向屏幕输出信息<br>-o:输出文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -r -9 -o a.zip /home/... -x ~/*.zip</span><br></pre></td></tr></table></figure></p>
+<p>1.０－９代表级别，９是压缩为最小包　耗时最长<br>2.路径只能使用绝对路径表示<br>3.-x表示排除.zip文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -h -d 0 *.zip ~|sort　//查看文件深度和大小</span><br></pre></td></tr></table></figure></p>
+<p>-h:查看文件深度<br>-e:加密压缩包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">unzip ...zip -d test //解压到test目录</span><br><span class="line">unzip -l test.zip //查看test.zip的内容</span><br><span class="line">unzip -O GBK 中.zip //制定编码类型</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
