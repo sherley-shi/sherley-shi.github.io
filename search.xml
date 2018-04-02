@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Linux学习（四）]]></title>
     <url>%2F2018%2F04%2F02%2FLinux%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%9B%9B%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[Linux下的帮助命令内建命令和外建命令 内建命令：是shell程序中的一部分，解析内部命令时shell不需要创建子进程，执行速度比外部命令块．外部命令：在需要时才将其调入内存，由shell控制，如ls,vi…可以使用type来区分命令 几种帮助命令help使用help cd来查看cd命令的用法,当使用help来查看外部命令时不会显示信息–help用于查看外部信息 manman内建命令，外部命令都可以显示图中LS()为章节| 数字 | 章节 || —- | —- || 1 | 标准命令 |]]></content>
+    <content type="text"><![CDATA[Linux下的帮助命令内建命令和外建命令 内建命令：是shell程序中的一部分，解析内部命令时shell不需要创建子进程，执行速度比外部命令块．外部命令：在需要时才将其调入内存，由shell控制，如ls,vi…可以使用type来区分命令 几种帮助命令help使用help cd来查看cd命令的用法,当使用help来查看外部命令时不会显示信息–help用于查看外部信息 manman内建命令，外部命令都可以显示图中LS()为章节1代表标准命令 infoinfo比man更加完整]]></content>
       <categories>
         <category>Linux</category>
       </categories>
