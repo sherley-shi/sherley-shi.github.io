@@ -1,123 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title>Linux课上题</title>
-      <link href="/2018/04/24/Linux%E8%AF%BE%E4%B8%8A%E9%A2%98/"/>
-      <content type="html"><![CDATA[<p><img src="/2018/04/24/Linux课上题/1.png" alt="课上作业答案"></p>]]></content>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>Linux学习（四）</title>
-      <link href="/2018/04/02/Linux%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%9B%9B%EF%BC%89/"/>
-      <content type="html"><![CDATA[<h1 id="Linux下的帮助命令"><a href="#Linux下的帮助命令" class="headerlink" title="Linux下的帮助命令"></a>Linux下的帮助命令</h1><h2 id="内建命令和外建命令"><a href="#内建命令和外建命令" class="headerlink" title="内建命令和外建命令"></a>内建命令和外建命令</h2><blockquote><p>内建命令：是shell程序中的一部分，解析内部命令时shell不需要创建子进程，执行速度比外部命令块．<br>外部命令：在需要时才将其调入内存，由shell控制，如ls,vi…<br>可以使用type来区分命令</p></blockquote><p><img src="/2018/04/02/Linux学习（四）/内建命令.png" alt="type"></p><h2 id="几种帮助命令"><a href="#几种帮助命令" class="headerlink" title="几种帮助命令"></a>几种帮助命令</h2><h3 id="help"><a href="#help" class="headerlink" title="help"></a>help</h3><p>使用<strong>help cd</strong>来查看cd命令的用法,当使用help来查看外部命令时不会显示信息<br><img src="/2018/04/02/Linux学习（四）/help.png" alt="help"><br><strong>–help</strong>用于查看外部信息</p><h3 id="man"><a href="#man" class="headerlink" title="man"></a>man</h3><p>man内建命令，外部命令都可以显示<br><img src="/2018/04/02/Linux学习（四）/man.png" alt="man"><br>图中LS()为章节<br>1代表标准命令</p><h3 id="info"><a href="#info" class="headerlink" title="info"></a>info</h3><p>info比man更加完整<br><img src="/2018/04/02/Linux学习（四）/info.png" alt="info"></p>]]></content>
-      
+<search>
+  <entry>
+    <title><![CDATA[Linux课上题]]></title>
+    <url>%2F2018%2F04%2F24%2FLinux%E8%AF%BE%E4%B8%8A%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux学习（四）]]></title>
+    <url>%2F2018%2F04%2F02%2FLinux%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%9B%9B%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[Linux下的帮助命令内建命令和外建命令 内建命令：是shell程序中的一部分，解析内部命令时shell不需要创建子进程，执行速度比外部命令块．外部命令：在需要时才将其调入内存，由shell控制，如ls,vi…可以使用type来区分命令 几种帮助命令help使用help cd来查看cd命令的用法,当使用help来查看外部命令时不会显示信息–help用于查看外部信息 manman内建命令，外部命令都可以显示图中LS()为章节1代表标准命令 infoinfo比man更加完整]]></content>
       <categories>
-          
-          <category> Linux </category>
-          
+        <category>Linux</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>Linux学习（三）</title>
-      <link href="/2018/03/16/Linux%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89/"/>
-      <content type="html"><![CDATA[<h1 id="文件打包与压缩"><a href="#文件打包与压缩" class="headerlink" title="文件打包与压缩"></a>文件打包与压缩</h1><h2 id="zip打包"><a href="#zip打包" class="headerlink" title="zip打包"></a>zip打包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -r -q -o test.zip /home/...　//将/home/...打包成一个文件</span><br></pre></td></tr></table></figure><p>-r: 递归打包，包含子目录的全部内容<br>-q:不向屏幕输出信息<br>-o:输出文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zip -r -9 -o a.zip /home/... -x ~/*.zip</span><br></pre></td></tr></table></figure></p><ol><li>０－９代表级别，９是压缩为最小包　耗时最长</li><li>路径只能使用绝对路径表示</li><li>-x表示排除.zip文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -h -d 0 *.zip ~|sort　//查看文件深度和大小</span><br></pre></td></tr></table></figure></li></ol><p>-h:查看文件深度<br>-e:加密压缩包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">unzip ...zip -d test //解压到test目录</span><br><span class="line">unzip -l test.zip //查看test.zip的内容</span><br><span class="line">unzip -O GBK 中.zip //指定编码类型</span><br></pre></td></tr></table></figure></p><h2 id="rar打包"><a href="#rar打包" class="headerlink" title="rar打包"></a>rar打包</h2><p>从指定文件或目录创建压缩包或添加文件到压缩包<br><strong>rar参数中没有＂－＂</strong><br>rar命令举例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rar d test.rar del //从压缩包中删除某个文件</span><br><span class="line">rar l test.rar //查看但不解压</span><br><span class="line">unrar x test.rar //全路径解压</span><br></pre></td></tr></table></figure></p><p>去掉路径解压：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir tmp </span><br><span class="line">unrar e test.rar tmp/　//去掉路径解压</span><br></pre></td></tr></table></figure></p><h2 id="tar打包"><a href="#tar打包" class="headerlink" title="tar打包"></a>tar打包</h2><p>Linux 更常用tar工具<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -cf test.tar ~ //不进行压缩，只创建归档文件</span><br><span class="line">tar -f test.tar -c ~ //和上面等效</span><br></pre></td></tr></table></figure></p><p>-c:创建一个tar文件</p><h1 id="文件操作系统与磁盘管理"><a href="#文件操作系统与磁盘管理" class="headerlink" title="文件操作系统与磁盘管理"></a>文件操作系统与磁盘管理</h1><h2 id="查看磁盘和目录的容量"><a href="#查看磁盘和目录的容量" class="headerlink" title="查看磁盘和目录的容量"></a>查看磁盘和目录的容量</h2><ol><li>使用df命令查看磁盘容量<br><img src="/2018/03/16/Linux学习（三）/df.png" alt="df"><br>默认以block大小展示<br>/dev/sda2表示主机硬盘的分区，数字表示分区号，a表示第几块硬盘<br><em>-h</em>提高可读性</li><li>使用du命令查看目录容量<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -h -d 0 ~ //查看一级目录信息</span><br></pre></td></tr></table></figure></li></ol><p>-a:显示目录中所有文件的大小<br>-s:总计，之列出最后加总的值</p><h2 id="简单的磁盘管理－－-创建虚拟磁盘"><a href="#简单的磁盘管理－－-创建虚拟磁盘" class="headerlink" title="简单的磁盘管理－－ 创建虚拟磁盘"></a>简单的磁盘管理－－ 创建虚拟磁盘</h2><h3 id="使用dd创建镜像文件"><a href="#使用dd创建镜像文件" class="headerlink" title="使用dd创建镜像文件"></a>使用dd创建镜像文件</h3><p>使用<em>dd</em>来转换和复制文件，可以用在备份硬件的引导扇区，获取一定数量的随机数据，也可以在复制时处理数据<br>首先对dd有一个了解：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> dd of=test bs=10 count=1</span><br><span class="line">//of : 输出文件</span><br><span class="line">//if : 输入文件</span><br><span class="line">//bs : block size 指定块大小，10个字节</span><br><span class="line">//count : 指定块数量</span><br></pre></td></tr></table></figure></p><h3 id="创建镜像文件："><a href="#创建镜像文件：" class="headerlink" title="创建镜像文件："></a>创建镜像文件：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dd if=/dev/zero of=virtual.img bs=1M count=256</span><br><span class="line">du -h virtual.img</span><br></pre></td></tr></table></figure><p>从/dev/zero 设备创建一个容量为２５６Ｍ　的空文件</p><h3 id="使用mkfs格式化磁盘"><a href="#使用mkfs格式化磁盘" class="headerlink" title="使用mkfs格式化磁盘"></a>使用mkfs格式化磁盘</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkfs.ext4 virtual.img //进行格式化</span><br></pre></td></tr></table></figure><h3 id="使用mount挂载磁盘到目录树"><a href="#使用mount挂载磁盘到目录树" class="headerlink" title="使用mount挂载磁盘到目录树"></a>使用mount挂载磁盘到目录树</h3><p>mount: 通常使用在USB或其他可移除设备上，而根目录始终保持挂载的状态；mount告诉操作系统对应的文件系统已经准备好了，文件系统会对应到一个挂载点<br>sudo mount 设备名 on 挂载点 type 文件类型<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mount -o loop -t ext4 virtual.img /mnt</span><br><span class="line"># loop 挂载类型</span><br><span class="line"></span><br><span class="line">mount -o loop -ro virtual.img /mnt</span><br><span class="line">//以只读方式运行</span><br></pre></td></tr></table></figure></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo umount /mnt</span><br><span class="line">//卸载已挂载磁盘</span><br></pre></td></tr></table></figure><h3 id="使用fdisk为磁盘分区"><a href="#使用fdisk为磁盘分区" class="headerlink" title="使用fdisk为磁盘分区"></a>使用fdisk为磁盘分区</h3><p>查看磁盘分区：<em>sudo fdisk -l</em>,显示扇区数，扇区大小，I/O大小…<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo fdisk virtual.img</span><br><span class="line">//进入磁盘分区模式</span><br></pre></td></tr></table></figure></p><h3 id="使用loseup创建镜像与回环设备的关联"><a href="#使用loseup创建镜像与回环设备的关联" class="headerlink" title="使用loseup创建镜像与回环设备的关联"></a>使用loseup创建镜像与回环设备的关联</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo loseup /dev/loop0 virtual.img</span><br></pre></td></tr></table></figure><p>删除设备关联使用<em>sudo loseup -d /dev/loop0</em></p><h3 id="使用kpartx为各分区建立虚拟设备的映射"><a href="#使用kpartx为各分区建立虚拟设备的映射" class="headerlink" title="使用kpartx为各分区建立虚拟设备的映射"></a>使用kpartx为各分区建立虚拟设备的映射</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo kpartx -av /dev/loop0</span><br></pre></td></tr></table></figure><p>取消映射：<em>sudo kpartx -dv /dev/loop0</em></p><h3 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h3><p>将其个格式化为ext４：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkfs.ext4 -1 /dev/mapper/loop0p1</span><br></pre></td></tr></table></figure></p><h3 id="创建空目录挂载虚拟磁盘"><a href="#创建空目录挂载虚拟磁盘" class="headerlink" title="创建空目录挂载虚拟磁盘"></a>创建空目录挂载虚拟磁盘</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /media/virtualdisk_&#123;1..3&#125;</span><br><span class="line">sudo mount /dev/mapper/loop0p1 /media/virtualdisk_1</span><br></pre></td></tr></table></figure><p>最后<em>df -h</em>查看<br><img src="/2018/03/16/Linux学习（三）/test.png" alt="test"></p>]]></content>
-      
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux学习（三）]]></title>
+    <url>%2F2018%2F03%2F16%2FLinux%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%89%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[文件打包与压缩zip打包1zip -r -q -o test.zip /home/... //将/home/...打包成一个文件 -r: 递归打包，包含子目录的全部内容-q:不向屏幕输出信息-o:输出文件1zip -r -9 -o a.zip /home/... -x ~/*.zip ０－９代表级别，９是压缩为最小包 耗时最长 路径只能使用绝对路径表示 -x表示排除.zip文件1du -h -d 0 *.zip ~|sort //查看文件深度和大小 -h:查看文件深度-e:加密压缩包123unzip ...zip -d test //解压到test目录unzip -l test.zip //查看test.zip的内容unzip -O GBK 中.zip //指定编码类型 rar打包从指定文件或目录创建压缩包或添加文件到压缩包rar参数中没有＂－＂rar命令举例：123rar d test.rar del //从压缩包中删除某个文件rar l test.rar //查看但不解压unrar x test.rar //全路径解压 去掉路径解压：12mkdir tmp unrar e test.rar tmp/ //去掉路径解压 tar打包Linux 更常用tar工具12tar -cf test.tar ~ //不进行压缩，只创建归档文件tar -f test.tar -c ~ //和上面等效 -c:创建一个tar文件 文件操作系统与磁盘管理查看磁盘和目录的容量 使用df命令查看磁盘容量默认以block大小展示/dev/sda2表示主机硬盘的分区，数字表示分区号，a表示第几块硬盘-h提高可读性 使用du命令查看目录容量1du -h -d 0 ~ //查看一级目录信息 -a:显示目录中所有文件的大小-s:总计，之列出最后加总的值 简单的磁盘管理－－ 创建虚拟磁盘使用dd创建镜像文件使用dd来转换和复制文件，可以用在备份硬件的引导扇区，获取一定数量的随机数据，也可以在复制时处理数据首先对dd有一个了解：12345 dd of=test bs=10 count=1//of : 输出文件//if : 输入文件//bs : block size 指定块大小，10个字节//count : 指定块数量 创建镜像文件：12dd if=/dev/zero of=virtual.img bs=1M count=256du -h virtual.img 从/dev/zero 设备创建一个容量为２５６Ｍ 的空文件 使用mkfs格式化磁盘1sudo mkfs.ext4 virtual.img //进行格式化 使用mount挂载磁盘到目录树mount: 通常使用在USB或其他可移除设备上，而根目录始终保持挂载的状态；mount告诉操作系统对应的文件系统已经准备好了，文件系统会对应到一个挂载点sudo mount 设备名 on 挂载点 type 文件类型12345mount -o loop -t ext4 virtual.img /mnt# loop 挂载类型mount -o loop -ro virtual.img /mnt//以只读方式运行 12sudo umount /mnt//卸载已挂载磁盘 使用fdisk为磁盘分区查看磁盘分区：sudo fdisk -l,显示扇区数，扇区大小，I/O大小…12sudo fdisk virtual.img//进入磁盘分区模式 使用loseup创建镜像与回环设备的关联1sudo loseup /dev/loop0 virtual.img 删除设备关联使用sudo loseup -d /dev/loop0 使用kpartx为各分区建立虚拟设备的映射1sudo kpartx -av /dev/loop0 取消映射：sudo kpartx -dv /dev/loop0 格式化将其个格式化为ext４：1sudo mkfs.ext4 -1 /dev/mapper/loop0p1 创建空目录挂载虚拟磁盘12mkdir -p /media/virtualdisk_&#123;1..3&#125;sudo mount /dev/mapper/loop0p1 /media/virtualdisk_1 最后df -h查看]]></content>
       <categories>
-          
-          <category> Linux </category>
-          
+        <category>Linux</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>Bazinga</title>
-      <link href="/2018/03/13/newFile/"/>
-      <content type="html"><![CDATA[<p>Hey man.<br><img src="/2018/03/13/newFile/hey.jpg" alt="&quot;ha&quot;"></p>]]></content>
-      
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Bazinga]]></title>
+    <url>%2F2018%2F03%2F13%2FnewFile%2F</url>
+    <content type="text"><![CDATA[Hey man.]]></content>
       <categories>
-          
-          <category> test </category>
-          
+        <category>test</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> one </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>Linux学习（二）</title>
-      <link href="/2018/03/09/Linux%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
-      <content type="html"><![CDATA[<h1 id="Bash简单入门"><a href="#Bash简单入门" class="headerlink" title="Bash简单入门"></a>Bash简单入门</h1><p>在后面有用到Bash和shell，所以先看一点相关的东西</p><ol><li>Shell:命令解释器，是一种解释性语言，也成为脚本语言</li><li>Shell编程：可以使用vim,gedit来创建shell程序<blockquote><p>gedit hello.sh //创建shell程序<br>#!/bin/bash //#!用来说明文件类型，表示为需要由bin目录下的bash程序来解释<br>echo “hello world”<br>sh hello.sh //当使用　./　来进行执行时需要对文件的可执行权限进行修改</p></blockquote></li></ol><p>效果如下<br><img src="/2018/03/09/Linux学习（二）/shell编程.png" alt="shell"><br>也可以使用bash/./source来执行程序</p><h1 id="环境变量与文件查找"><a href="#环境变量与文件查找" class="headerlink" title="环境变量与文件查找"></a>环境变量与文件查找</h1><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><ol><li>变量（shell变量）：计算机中用于计算一个值的符号，可以用于不同的运算处理当中．一个范围内只能由一个同名变量．<blockquote><p>declare temp<br>temp=SJQ<br>echo $temp<br>以上代码为声明变量和显示变量值，也可以不使用 declare 直接对变量进行赋值，效果如下<br><img src="/2018/03/09/Linux学习（二）/declare.png" alt="变量声明"></p></blockquote></li><li>环境变量：作用域比自定义变量的大（如shell的环境变量作用于自身和它的子进程）<br>变量分为三种类型：1.当前shell进程私有的用户自定义变量；2.shell本身内建的变量；3.从自定义变量导出的环境变量</li></ol><h2 id="有关变量的一些命令"><a href="#有关变量的一些命令" class="headerlink" title="有关变量的一些命令"></a>有关变量的一些命令</h2><ol><li>set: 显示当前shell的所有变量</li><li>env: 显示与当前用户相关的环境变量，也可以让命令在指定环境中运行</li><li>export: 显示从shell中导出成环境变量的变量，也能通过它将自定义变量导出为环境变量（环境变量通常为大写）<br><img src="/2018/03/09/Linux学习（二）/export_环境变量.png" alt="export"><blockquote><p>zsh //创建自shell<br>如果不是环境变量，将无法使用该变量，需要使用export来使该变量变为环境变量<br>如果需要将变量变为永久的扮靓，需要修改配置文件．在这里知道了两个相关的文件：/etc/bashrc和/ect/profile，它们两个分别存放shell变量和环境变量</p></blockquote></li><li>添加自定义路径到”PATH”环境变量：<blockquote><p>PATH=$PATH:home/…(绝对路径)<br>使用这种方法，在退出终端后失效<br>PATH以：作为分隔符</p></blockquote></li><li>修改和删除已有变量：<br><table><br><tr><td>输入</td><td> 作用</td></tr><br><tr><td>${变量名#匹配字符</td><td>从前到后删除最短数据 </td></tr><br><tr><td>${变量名##匹配字符}</td><td>从前到后删除最长数据</td></tr><br><tr><td>${变量名%匹配字符}</td><td>从后到前删除最短数据</td></tr><br><tr><td>${变量名%%匹配字符}</td><td>从后到前删除最长数据</td></tr><br><tr><td>${变量名/旧字符串/新字符串}</td><td>将第一个旧字符串换为新字符串</td></tr><br><tr><td>${变量名//旧字符串/新字符串}</td><td>将全部旧字符串换为新字符串</td></tr></table><br>unset 变量名　删除变量</li></ol><h2 id="文件查找"><a href="#文件查找" class="headerlink" title="文件查找"></a>文件查找</h2><ol><li>whereis: 快速</li><li>locate: 快　全<blockquote><p>locate /etc/sh：查找/etc下所有sh开头的文件<br>locate /usr/share/*.jpg : 查找所有jpg文件<br>-c统计数目　－i忽略大小写</p></blockquote></li><li>which：小而快速，只从PATH环境变量指向的路径去搜索指令</li><li>find: 精而细．　find [path][option][action]</li></ol>]]></content>
-      
+      <tags>
+        <tag>one</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux学习（二）]]></title>
+    <url>%2F2018%2F03%2F09%2FLinux%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%BA%8C%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[Bash简单入门在后面有用到Bash和shell，所以先看一点相关的东西 Shell:命令解释器，是一种解释性语言，也成为脚本语言 Shell编程：可以使用vim,gedit来创建shell程序 gedit hello.sh //创建shell程序#!/bin/bash //#!用来说明文件类型，表示为需要由bin目录下的bash程序来解释echo “hello world”sh hello.sh //当使用 ./ 来进行执行时需要对文件的可执行权限进行修改 效果如下也可以使用bash/./source来执行程序 环境变量与文件查找变量 变量（shell变量）：计算机中用于计算一个值的符号，可以用于不同的运算处理当中．一个范围内只能由一个同名变量． declare temptemp=SJQecho $temp以上代码为声明变量和显示变量值，也可以不使用 declare 直接对变量进行赋值，效果如下 环境变量：作用域比自定义变量的大（如shell的环境变量作用于自身和它的子进程）变量分为三种类型：1.当前shell进程私有的用户自定义变量；2.shell本身内建的变量；3.从自定义变量导出的环境变量 有关变量的一些命令 set: 显示当前shell的所有变量 env: 显示与当前用户相关的环境变量，也可以让命令在指定环境中运行 export: 显示从shell中导出成环境变量的变量，也能通过它将自定义变量导出为环境变量（环境变量通常为大写） zsh //创建自shell如果不是环境变量，将无法使用该变量，需要使用export来使该变量变为环境变量如果需要将变量变为永久的扮靓，需要修改配置文件．在这里知道了两个相关的文件：/etc/bashrc和/ect/profile，它们两个分别存放shell变量和环境变量 添加自定义路径到”PATH”环境变量： PATH=$PATH:home/…(绝对路径)使用这种方法，在退出终端后失效PATH以：作为分隔符 修改和删除已有变量：输入 作用${变量名#匹配字符从前到后删除最短数据 ${变量名##匹配字符}从前到后删除最长数据${变量名%匹配字符}从后到前删除最短数据${变量名%%匹配字符}从后到前删除最长数据${变量名/旧字符串/新字符串}将第一个旧字符串换为新字符串${变量名//旧字符串/新字符串}将全部旧字符串换为新字符串unset 变量名 删除变量 文件查找 whereis: 快速 locate: 快 全 locate /etc/sh：查找/etc下所有sh开头的文件locate /usr/share/*.jpg : 查找所有jpg文件-c统计数目 －i忽略大小写 which：小而快速，只从PATH环境变量指向的路径去搜索指令 find: 精而细． find [path][option][action]]]></content>
       <categories>
-          
-          <category> Linux </category>
-          
+        <category>Linux</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>Linux学习</title>
-      <link href="/2018/03/07/Linux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/"/>
-      <content type="html"><![CDATA[<h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><p>图片转自实验楼<br><img src="/2018/03/07/Linux基本指令/FHS标准.png" alt="目录结构"></p><h1 id="目录路径"><a href="#目录路径" class="headerlink" title="目录路径"></a>目录路径</h1><p>使用cd切换目录;<br>.表示当前目录;<br>..表示上一级目录;<br>使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入<br>使用pwd来获取当前路径，如下图<br><img src="/2018/03/07/Linux基本指令/pwd.png" alt="pwd"></p><h1 id="创建文件及目录"><a href="#创建文件及目录" class="headerlink" title="创建文件及目录"></a>创建文件及目录</h1><p>新建空白文件： touch 文件名<br>新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）<br>创建多个文件： touch file{1..5}.txt<br>复制文件： cp 文件名 目的目录<br>复制整个目录： cp -r(或者－R)　目录名　目的目录名</p><h1 id="删除文件及目录"><a href="#删除文件及目录" class="headerlink" title="删除文件及目录"></a>删除文件及目录</h1><p>使用 rm 删除文件<br>使用rm -f 强制删除文件<br>无法使用rm删除目录，应使用rm -r删除目录<br>效果图如下所示<br><img src="/2018/03/07/Linux基本指令/delete.png" alt="delete"></p><h1 id="移动文件与文件重命名"><a href="#移动文件与文件重命名" class="headerlink" title="移动文件与文件重命名"></a>移动文件与文件重命名</h1><p>移动文件：　mv 源目录文件　目的目录<br>重命名：　mv 旧文件名　新文件名<br>批量重命名： rename ‘s/.txt/.c’*.txt 表示将.txt后缀改为.c</p><h1 id="查看文件"><a href="#查看文件" class="headerlink" title="查看文件"></a>查看文件</h1><p>使用cat查看文件，效果如下图<br><img src="/2018/03/07/Linux基本指令/cat.png" alt="cat"></p><p>加入 -n 显示行号<br><img src="/2018/03/07/Linux基本指令/hanghao.png" alt="hanghao"></p><p>使用more显示一屏文件,键入ENTER显示下一行，键入space显示下一屏</p><p>可以使用tail和head显示后面几行和前面几行的文件，添加 -n 2表示显示行数，效果图如下所示<br><img src="/2018/03/07/Linux基本指令/tail.png" alt="tail"></p>]]></content>
-      
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux学习]]></title>
+    <url>%2F2018%2F03%2F07%2FLinux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[目录结构图片转自实验楼 目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图 创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp 文件名 目的目录复制整个目录： cp -r(或者－R) 目录名 目的目录名 删除文件及目录使用 rm 删除文件使用rm -f 强制删除文件无法使用rm删除目录，应使用rm -r删除目录效果图如下所示 移动文件与文件重命名移动文件： mv 源目录文件 目的目录重命名： mv 旧文件名 新文件名批量重命名： rename ‘s/.txt/.c’*.txt 表示将.txt后缀改为.c 查看文件使用cat查看文件，效果如下图 加入 -n 显示行号 使用more显示一屏文件,键入ENTER显示下一行，键入space显示下一屏 可以使用tail和head显示后面几行和前面几行的文件，添加 -n 2表示显示行数，效果图如下所示]]></content>
       <categories>
-          
-          <category> Linux </category>
-          
+        <category>Linux</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2018/02/27/hello-world/"/>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-      
-      
-    </entry>
-    
-  
-  
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F02%2F27%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
 </search>
