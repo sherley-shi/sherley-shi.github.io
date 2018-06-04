@@ -79,7 +79,7 @@
 
 
 
-  <meta name="keywords" content="Linux," />
+  <meta name="keywords" content="Linux,shell," />
 
 
 
@@ -90,25 +90,20 @@
 
 
 
-<meta name="description" content="目录结构图片转自实验楼 目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图 创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp 文件名 目">
-<meta name="keywords" content="Linux">
+<meta name="description" content="题目要求 编写一个脚本文件checkuser,该脚本运行时带一个用户名作为参数，在/etc/passwd文件中查找是否有该用户，如果有，则输出＂Found＂,否则输出＂No ＂  代码实现12345678910for i in $*do    a=`grep $i /etc/passwd`    if [ -z &amp;quot;$a&amp;quot; ]    then        echo &amp;quot;">
+<meta name="keywords" content="Linux,shell">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux学习">
-<meta property="og:url" content="http://yoursite.com/2018/03/07/Linux基本指令/index.html">
+<meta property="og:title" content="Linux课上题">
+<meta property="og:url" content="http://yoursite.com/2018/04/24/Linux/index.html">
 <meta property="og:site_name" content="Bazinga">
-<meta property="og:description" content="目录结构图片转自实验楼 目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图 创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp 文件名 目">
+<meta property="og:description" content="题目要求 编写一个脚本文件checkuser,该脚本运行时带一个用户名作为参数，在/etc/passwd文件中查找是否有该用户，如果有，则输出＂Found＂,否则输出＂No ＂  代码实现12345678910for i in $*do    a=`grep $i /etc/passwd`    if [ -z &amp;quot;$a&amp;quot; ]    then        echo &amp;quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/FHS标准.png">
-<meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/pwd.png">
-<meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/delete.png">
-<meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/cat.png">
-<meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/hanghao.png">
-<meta property="og:image" content="http://yoursite.com/2018/03/07/Linux基本指令/tail.png">
-<meta property="og:updated_time" content="2018-03-07T09:37:44.620Z">
+<meta property="og:image" content="http://yoursite.com/2018/04/24/Linux/finally.png">
+<meta property="og:updated_time" content="2018-06-04T13:23:48.976Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux学习">
-<meta name="twitter:description" content="目录结构图片转自实验楼 目录路径使用cd切换目录;.表示当前目录;..表示上一级目录;使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入使用pwd来获取当前路径，如下图 创建文件及目录新建空白文件： touch 文件名新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）创建多个文件： touch file{1..5}.txt复制文件： cp 文件名 目">
-<meta name="twitter:image" content="http://yoursite.com/2018/03/07/Linux基本指令/FHS标准.png">
+<meta name="twitter:title" content="Linux课上题">
+<meta name="twitter:description" content="题目要求 编写一个脚本文件checkuser,该脚本运行时带一个用户名作为参数，在/etc/passwd文件中查找是否有该用户，如果有，则输出＂Found＂,否则输出＂No ＂  代码实现12345678910for i in $*do    a=`grep $i /etc/passwd`    if [ -z &amp;quot;$a&amp;quot; ]    then        echo &amp;quot;">
+<meta name="twitter:image" content="http://yoursite.com/2018/04/24/Linux/finally.png">
 
 
 
@@ -138,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/07/Linux基本指令/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/24/Linux/"/>
 
 
 
 
 
-  <title>Linux学习 | Bazinga</title>
+  <title>Linux课上题 | Bazinga</title>
   
 
 
@@ -309,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/07/Linux基本指令/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/24/Linux/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="时佳琦">
@@ -326,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux学习</h1>
+          <h1 class="post-title" itemprop="name headline">Linux课上题</h1>
         
 
         <div class="post-meta">
@@ -338,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T16:38:34+08:00">
-                2018-03-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-24T17:08:11+08:00">
+                2018-04-24
               </time>
             
 
@@ -361,8 +356,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
+                  <a href="/categories/shell小程序/" itemprop="url" rel="index">
+                    <span itemprop="name">shell小程序</span>
                   </a>
                 </span>
 
@@ -398,15 +393,11 @@
       
 
       
-        <h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><p>图片转自实验楼<br><img src="/2018/03/07/Linux基本指令/FHS标准.png" alt="目录结构"></p>
-<h1 id="目录路径"><a href="#目录路径" class="headerlink" title="目录路径"></a>目录路径</h1><p>使用cd切换目录;<br>.表示当前目录;<br>..表示上一级目录;<br>使用cd ~进入当前用户的home目录，也可以使用”cd /home/用户名”来进入<br>使用pwd来获取当前路径，如下图<br><img src="/2018/03/07/Linux基本指令/pwd.png" alt="pwd"></p>
-<h1 id="创建文件及目录"><a href="#创建文件及目录" class="headerlink" title="创建文件及目录"></a>创建文件及目录</h1><p>新建空白文件： touch 文件名<br>新建目录： mkdir 目录名（使用-p可以创建不存在的父目录）<br>创建多个文件： touch file{1..5}.txt<br>复制文件： cp 文件名 目的目录<br>复制整个目录： cp -r(或者－R)　目录名　目的目录名</p>
-<h1 id="删除文件及目录"><a href="#删除文件及目录" class="headerlink" title="删除文件及目录"></a>删除文件及目录</h1><p>使用 rm 删除文件<br>使用rm -f 强制删除文件<br>无法使用rm删除目录，应使用rm -r删除目录<br>效果图如下所示<br><img src="/2018/03/07/Linux基本指令/delete.png" alt="delete"></p>
-<h1 id="移动文件与文件重命名"><a href="#移动文件与文件重命名" class="headerlink" title="移动文件与文件重命名"></a>移动文件与文件重命名</h1><p>移动文件：　mv 源目录文件　目的目录<br>重命名：　mv 旧文件名　新文件名<br>批量重命名： rename ‘s/.txt/.c’*.txt 表示将.txt后缀改为.c</p>
-<h1 id="查看文件"><a href="#查看文件" class="headerlink" title="查看文件"></a>查看文件</h1><p>使用cat查看文件，效果如下图<br><img src="/2018/03/07/Linux基本指令/cat.png" alt="cat"></p>
-<p>加入 -n 显示行号<br><img src="/2018/03/07/Linux基本指令/hanghao.png" alt="hanghao"></p>
-<p>使用more显示一屏文件,键入ENTER显示下一行，键入space显示下一屏</p>
-<p>可以使用tail和head显示后面几行和前面几行的文件，添加 -n 2表示显示行数，效果图如下所示<br><img src="/2018/03/07/Linux基本指令/tail.png" alt="tail"></p>
+        <h2 id="题目要求"><a href="#题目要求" class="headerlink" title="题目要求"></a>题目要求</h2><blockquote>
+<p>编写一个脚本文件checkuser,该脚本运行时带一个用户名作为参数，在/etc/passwd文件中查找是否有该用户，如果有，则输出＂Found<user>＂,否则输出＂No <user>＂</user></user></p>
+</blockquote>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">for i in $*</span><br><span class="line">do</span><br><span class="line">    a=`grep $i /etc/passwd`</span><br><span class="line">    if [ -z &quot;$a&quot; ]</span><br><span class="line">    then</span><br><span class="line">        echo &quot;No such &lt;$i&gt;&quot;</span><br><span class="line">    else</span><br><span class="line">        echo &quot;Found &lt;$i&gt;&quot;</span><br><span class="line">    fi</span><br><span class="line">done</span><br></pre></td></tr></table></figure>
+<p><img src="/2018/04/24/Linux/finally.png" alt="课上作业答案"></p>
 
       
     </div>
@@ -426,6 +417,8 @@
           
             <a href="/tags/Linux/" rel="tag"># Linux</a>
           
+            <a href="/tags/shell/" rel="tag"># shell</a>
+          
         </div>
       
 
@@ -437,8 +430,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/27/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/04/02/Linux学习（四）/" rel="next" title="Linux学习（四）">
+                <i class="fa fa-chevron-left"></i> Linux学习（四）
               </a>
             
           </div>
@@ -447,8 +440,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/09/Linux学习（二）/" rel="prev" title="Linux学习（二）">
-                Linux学习（二） <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/24/Linux课上题/" rel="prev" title="Linux课上题">
+                Linux课上题 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -597,7 +590,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录结构"><span class="nav-number">1.</span> <span class="nav-text">目录结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#目录路径"><span class="nav-number">2.</span> <span class="nav-text">目录路径</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建文件及目录"><span class="nav-number">3.</span> <span class="nav-text">创建文件及目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除文件及目录"><span class="nav-number">4.</span> <span class="nav-text">删除文件及目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#移动文件与文件重命名"><span class="nav-number">5.</span> <span class="nav-text">移动文件与文件重命名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看文件"><span class="nav-number">6.</span> <span class="nav-text">查看文件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目要求"><span class="nav-number">1.</span> <span class="nav-text">题目要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码实现"><span class="nav-number">2.</span> <span class="nav-text">代码实现</span></a></li></ol></div>
             
 
           </div>
