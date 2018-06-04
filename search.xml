@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[0-1背包（动态规划法）]]></title>
+    <url>%2F2018%2F06%2F04%2F%E7%AE%97%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960#include&lt;iostream&gt;#include&lt;algorithm&gt;using namespace std;/* * 0 1背包问题：一个物品最多只可以被选择一次 * 用一个数组保存状态信息 */int max_size = 10;int weight[10];int value[10];int N,W;int arr[10];int sum[10][10];int solve()&#123; for(int i = 1;i &lt;= N;i++)&#123; for(int j = 1;j &lt;= W;j++)&#123; if(j &lt; weight[i-1]) sum[i][j] = sum[i-1][j]; else sum[i][j] = max(sum[i-1][j], sum[i-1][j-weight[i-1]]+value[i-1]); &#125; &#125; return sum[N][W];&#125;void check()&#123; int j = W; for(int i = N;i &gt; 0; i--)&#123; if(sum[i][j] == sum[i-1][j])&#123; arr[i] = 0; &#125;else&#123; arr[i] = 1; j -= weight[i-1]; &#125; &#125; for(int p = 0; p &lt;= N;p++)&#123; if(arr[p] != 0) cout &lt;&lt; &quot; No.&quot;&lt;&lt; p &lt;&lt; &quot; is selected&quot; &lt;&lt; endl; &#125;&#125;int main()&#123; cout &lt;&lt; &quot;input the number of things: &quot;; cin &gt;&gt; N; cout &lt;&lt; &quot;input the max weight of the bag: &quot;;cin &gt;&gt; W; cout &lt;&lt; &quot;input the weight and value: &quot; &lt;&lt; endl; for(int i = 0;i &lt; N;i++)&#123; cin &gt;&gt; weight[i] &gt;&gt; value[i]; &#125; for(int q = 0; q &lt;= N;q++)&#123; for(int j = 0;j &lt;= W;j++)&#123; sum[q][j] = 0; &#125; arr[q] = 0; &#125; cout &lt;&lt; &quot;the max value is: &quot; &lt;&lt; solve() &lt;&lt; endl; check(); return 0;&#125;]]></content>
+      <tags>
+        <tag>算法</tag>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Linux课上题]]></title>
     <url>%2F2018%2F04%2F24%2FLinux%E8%AF%BE%E4%B8%8A%E9%A2%98%2F</url>
     <content type="text"><![CDATA[题目要求 编写一个脚本文件checkuser,该脚本运行时带一个用户名作为参数，在/etc/passwd文件中查找是否有该用户，如果有，则输出＂Found＂,否则输出＂No ＂ 代码实现12345678910for i in $*do a=`grep $i /etc/passwd` if [ -z &quot;$a&quot; ] then echo &quot;No such &lt;$i&gt;&quot; else echo &quot;Found &lt;$i&gt;&quot; fidone]]></content>
